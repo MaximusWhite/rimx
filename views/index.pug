@@ -19,22 +19,26 @@ html.has-background-grey-dark.is-bold
               .level-item
               .level-item
               .level-item    
+              .level-item 
               .level-item
-
-            .level-right  
+              .level-item
+              .level-item
+              .level-item    
+              .level-item 
               .level-item
                 p.subtitle.is-3
-                  strong The leaders to fix rims
+                  strong 
+                    em The leaders in fixing rims
             // Right side
-            //- .level-right
-            //-   p.level-item.has-text-centered
-            //-     a.link.is-info Contact Us
+            .level-right
+              p.level-item.has-text-centered
+                a.link.is-info(href="#contact-section") Contact Us
     section 
       div.container
           article.message.is-dark.has-background-grey-lighter
-            .message-body.has-text-centered
-              p.title.is-size-2
-                | About Us
+            .message-header.has-text-centered
+              p.title.has-text-white About Us  
+            .message-body
               p.subtitle
                 | We are professional mobile rim repairs in the GTA.
                 | Rims take a lot of punishment out on the road and are one of the most common parts of the car to suffer from damage. If you need quality repairs from a leading rim repair company, look no further than RimX Inc.
@@ -42,10 +46,93 @@ html.has-background-grey-dark.is-bold
     section
       div.container
           article.message.is-dark.has-background-grey-lighter
+            .message-header.has-text-centered
+               p.title.has-text-white Why choose us
+            .message-body.content
+              .columns 
+                .column
+                  ul(style="list-style-position: inside;list-style-image:url('images/ul_dot.png')") 
+                    li.is-size-5 We make rim repair more convenient for you 
+                    li.is-size-5 We are a friendly and professional group of people
+                    li.is-size-5 We handle a wide range of rim services
+                .column 
+                   ul(style="list-style-position: inside;list-style-image:url('images/ul_dot.png')") 
+                    li.is-size-5 Same day service for most repairs and services
+                    li.is-size-5 We get the job done right - the first time
+    section
+      div.container
+          article.message.is-dark.has-background-grey-lighter
+            .message-header.has-text-centered
+              p.title.has-text-white Some of our work
             .message-body.has-text-centered
-              p.title.is-size-2 Why choose us:  
-              .is-size-4 We make rim repair more convenient for you 
-              .is-size-4 We are friendly and professional group of people
-              .is-size-4 We handle a wide range of rim services
-              .is-size-4 Same day service for most repairs and services
-              .is-size-4 We get the job done right- the first time
+              .columns 
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/bmw_before.jpg')
+                    .card-content
+                      p Before
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/bmw_after.jpg')
+                    .card-content
+                      p After
+              .columns 
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/mercedes_before.jpg')
+                    .card-content
+                      p Before
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/mercedes_after.jpg')
+                    .card-content
+                      p After
+
+              .columns 
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/volvo_before.jpg')
+                    .card-content
+                      p Before
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/volvo_after.jpg')
+                    .card-content
+                      p After
+              .columns 
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/paint_before.jpg')
+                    .card-content
+                      p Before
+                .column
+                  .card
+                    .card-image
+                      figure.image.is4by3
+                        img(src='images/paint_after.jpg')
+                    .card-content
+                      p After
+    section
+      div.container#contact-section
+          article.message.is-dark.has-background-grey-lighter
+            .message-header.has-text-centered
+              p.title.has-text-white Contact Us
+            .message-body.content
+              ul(style="list-style-position: inside;list-style-image:url('images/ul_dot.png')") 
+                li.is-size-5 Email
+                li.is-size-5 Telephone
+                li.is-size-5 Address
